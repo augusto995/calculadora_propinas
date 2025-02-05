@@ -5,7 +5,9 @@ function App() {
 
   return (
     <>
-    <h1 className=" text-9xl font-black text-indigo-700">Hola Mundo</h1>
+    <header className="bg-teal-400 py-5">
+      <h1 className="text-center text-4xl font-black">Calculadora de Propinas y Consumos</h1>
+    </header>
      
     </>
   )
