@@ -1,7 +1,9 @@
 import MenuItem from "./components/MenuItem"
 import { menuItems } from "./data/db"
 
+
 function App() {
+  
   
   console.log(menuItems)
   //En main, md:grid-cols-2 es el media query de tailwind
