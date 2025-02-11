@@ -6,7 +6,11 @@ export default function useOrder(){
     //Se usa con types mas complejos que typescript no infiere bien
     const [order, setOrder] = useState<OrderItem[]>([])
 
-    return{
+    const addItem = () => {
+        console.log('Agregando')
+    }
 
+    return{
+        addItem
     }
 }

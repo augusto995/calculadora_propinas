@@ -1,11 +1,12 @@
 import MenuItem from "./components/MenuItem"
 import { menuItems } from "./data/db"
+import useOrder from "./hooks/useOrder"
 
 
 function App() {
   
+  const { addItem } = useOrder()
   
-  console.log(menuItems)
   //En main, md:grid-cols-2 es el media query de tailwind
   return (
     <>
@@ -24,6 +25,7 @@ function App() {
           <MenuItem
           key={item.id}
           item={item}
+          addItem={addItem}
           />
 
         ))}
