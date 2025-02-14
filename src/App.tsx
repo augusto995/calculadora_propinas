@@ -3,7 +3,6 @@ import OrderContents from "./components/OrderContents"
 import { menuItems } from "./data/db"
 import useOrder from "./hooks/useOrder"
 
-
 function App() {
   
   const {order, addItem } = useOrder()
