@@ -7,7 +7,7 @@ import useOrder from "./hooks/useOrder"
 
 function App() {
   
-  const {order, addItem, removeItem } = useOrder()
+  const {order, addItem, removeItem, tip , setTip } = useOrder()
   
   //En main, md:grid-cols-2 es el media query de tailwind
   return (
@@ -43,7 +43,7 @@ function App() {
 
 
         <TipPercentageForm
-        
+          setTip={setTip}
         />
 
         <OrderTotals

@@ -5,6 +5,7 @@ export default function useOrder(){
 
     //Se usa con types mas complejos que typescript no infiere bien
     const [order, setOrder] = useState<OrderItem[]>([])
+    const [tip, setTip] = useState(0)
 
     const addItem = (item: MenuItem) => {
 
@@ -27,6 +28,8 @@ export default function useOrder(){
 
     return{
         order,
+        tip,
+        setTip,
         addItem,
         removeItem
     }
