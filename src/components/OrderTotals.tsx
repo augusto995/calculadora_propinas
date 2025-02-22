@@ -14,6 +14,7 @@ export default function OrderTotals({order, tip} : OrderTotalsProps) {
   const totalAmount = useMemo(() => subtotalAmount+tipAmount , [tip, order] )
   //Ejemplo con useCallback
   //const totalAmount = useCallback(() => subtotalAmount() + tipAmount() , [tip, order] )
+  
   return (
     <>
     <div className="space-y-2">
