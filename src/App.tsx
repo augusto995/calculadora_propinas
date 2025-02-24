@@ -6,7 +6,6 @@ import { menuItems } from "./data/db"
 import useOrder from "./hooks/useOrder"
 
 function App() {
-  
   const {order, tip , setTip, addItem, removeItem, placeOrder  } = useOrder()
   
   //En main, md:grid-cols-2 es el media query de tailwind
